@@ -18,7 +18,7 @@
 
             $.each(node['containers'], function(_, container) {
               var summary_items = [];
-              if (container.top_container_indicator) {
+              if (container.top_container_indicator && container.top_container_type) {
                 var top_container_summary = '';
                 top_container_summary += ' (' + self.i18n('container_type', container.top_container_type);
 
